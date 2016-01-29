@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 		if @user.save
 			session[:user_id] = @user.id
-			redirect_to @user, notice: 'Thank you for signing up to ribbit'
+			redirect_to @user, notice: 'Thank you for signing up'
 		else
 			render 'new'
 		end
