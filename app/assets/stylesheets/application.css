@@ -26,6 +26,10 @@
  	margin: 0; padding: 0;
  }
 
+
+ #content {
+    min-height: 730px;
+ }
  input {
  	width: 236px;
  	height: 38px;
@@ -111,4 +115,20 @@ p {
   	bottom:0;
 
  }
+}
+
+div#flash-warning.flash {
+ background: #ffe4c1;
+ color: yellow;
+ border: 1px solid #79420d;
+}
+div#flash-error.flash {
+ background: #ffefef;
+ color: red;
+ border: 1px solid #4c1717;
+}
+div#flash-notice.flash {
+ background: #efffd7;
+ color: green;
+ border: 1px solid #8ba015;
 }

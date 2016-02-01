@@ -5,7 +5,7 @@ class RibbitsController < ApplicationController
 		if @ribbit.save
 			redirect_to current_user
 		else
-			flash[:error] = 'Problem!'
+			flash[:error] = 'Tweet length should not be more 140 characters!'
 			redirect_to current_user
 		end
 	end

@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 	    if current_user
 	        @ribbit = Ribbit.new
 	        buddies_ids = current_user.followeds.map(&:id).push(current_user.id)
-	        @ribbits = Ribbit.all
+	        @ribbits = Ribbit.where(:user_id => buddies_ids)
 	    else
 	        redirect_to root_url
 	    end
