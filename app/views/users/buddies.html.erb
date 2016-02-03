@@ -20,7 +20,7 @@
             @<%= ribbit.user.email %>
             <span class="time"><%= time_ago_in_words(ribbit.created_at) %></span>
             <p> <%= ribbit.content %> </p>
-            <% if current_user == ribbit.user%>
+            <% if current_user == ribbit.user %>
                 <%= link_to 'Delete', ribbit_path(ribbit.id),confirm: 'Are you sure?', method: :delete %>
             <% end %>
         </div>

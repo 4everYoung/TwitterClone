@@ -12,7 +12,6 @@ class User < ActiveRecord::Base
 
   before_validation :prep_email
   before_save :create_avatar_url
-  #before_create
 
   validates :name, presence: true
   validates :username, uniqueness: true, presence: true

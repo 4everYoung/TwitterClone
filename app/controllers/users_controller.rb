@@ -31,15 +31,6 @@ class UsersController < ApplicationController
 		).first_or_initialize if current_user
 	end
 
-	def edit
-	end
-
-	def update
-	end
-
-	def destroy
-	end
-
 	def buddies
 	    if current_user
 	        @ribbit = Ribbit.new
