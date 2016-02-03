@@ -14,7 +14,7 @@ def create
 end
 
 def destroy
-    @relationship = Relationship.find(params[:id])
+    @relationship = Relationship.find_by_follower_id(current_user.id)
     @relationship.destroy
     redirect_to user_path params[:id]
 end
