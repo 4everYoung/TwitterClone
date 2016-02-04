@@ -11,7 +11,7 @@
         <div class="wrapper">
             <span>Twitter Clone</span>
             <br>
-            <% if current_user != nil && session[:userid] != nil %>
+            <% if current_user != nil && session[:user_id] != nil %>
                 <%= link_to "All Tweets | ", ribbits_path %>
                 <%= link_to "Followed Tweets | ", buddies_path %>
                 <%= link_to "All Users | ", users_path %>
