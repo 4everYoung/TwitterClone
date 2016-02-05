@@ -27,6 +27,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'simplecov', :require => false, :group => :test
+gem 'rspec', :require => false, :group => :test
+
+group :development, :test do
+  gem 'rspec-rails', '>= 2.0.0.beta'
+end
 # Use Unicorn as the app server
 # gem 'unicorn'
 

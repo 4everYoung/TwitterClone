@@ -40,4 +40,8 @@ class RibbitsController < ApplicationController
 			end
 		end
 	end
+
+	def ribbit_params
+		params.require(:ribbit).permit(:content)
+	end
 end
