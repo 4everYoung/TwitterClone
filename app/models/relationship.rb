@@ -1,5 +1,4 @@
-class Relationship < Active
-  Record::Base
+class Relationship < ActiveRecord::Base
   attr_accessor :followed_id, :follower_id
 
   belongs_to :follower, class_name: 'User'

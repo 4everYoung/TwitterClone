@@ -1,5 +1,4 @@
 require 'rails_helper'
-=begin
 
 describe Relationship do
   before :each do
@@ -17,4 +16,3 @@ describe Relationship do
   end
 end
 
-=end
