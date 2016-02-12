@@ -16,10 +16,13 @@ class RibbitsController < ApplicationController
 		@ribbit = Ribbit.find(params[:id])
 		@ribbit.destroy
 
+		redirect_to buddies_path
+=begin
 		respond_to do |format|
 			format.js { render inline: "window.location.reload();" }
 			format.json { head :ok }
 		end
+=end
 	end
 
 	def index

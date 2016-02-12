@@ -20,4 +20,16 @@ describe Ribbit do
       @ribbit.content.should eql "new tweet"
     end
   end
+
+  describe "#content" do
+    it "should have length smaller then 140 symbols" do
+      @ribbit.content.length.should <= 140
+    end
+  end
+  describe "#content" do
+    it "throws an Error when content length more then 140 symbols" do
+       rib = Ribbit.new(content: "qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3qweqweqwe3 qweqweqwe3")
+      rib.errors.get(:content) != nil
+    end
+  end
 end

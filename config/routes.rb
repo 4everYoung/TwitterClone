@@ -10,7 +10,10 @@ Rails.application.routes.draw do
 
   root to: 'users#new'
 
-
+=begin
+  get 'users', to: 'users#index', as: 'users'
+  get 'users/show'
+=end
 
   get 'sessions/new'
 

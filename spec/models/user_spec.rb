@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+require 'user'
 describe User do
   it "is valid with name, username, email" do
     @user = User.new(id: 999, username: "DarkNight", name: "Teddy",  email: "MaiL@mail.ru", password_digest: "123456", avatar_url: "//", created_at: 2016-01-01, updated_at: 2016-02-02)
